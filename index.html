@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="./assets/images/icons/favicon96x96.ico">
+    <meta name="theme-color" content="#000">
+    <meta name="description" content="Weaather Application">
+    <meta name="keywords" content="Weather Application, Weather">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+    <meta name="author" content="sally_the_techie">
+    <link rel="stylesheet" href="./style/index.css">
+</head>
+<body>
+    <div class="lds-dual-ring center display-none"></div>
+    <main>
+        <button id="open-menu-btn" class="ripple">
+            <img class ="icon-sm-28"
+            src="assets/images/icons/menu.png"
+            alt="">
+        </button> 
+        <!--currently weather section-->
+        <section
+        id="currently-day-weather-container">
+        <h1 class="location-label">Nairobi</h1>
+        <div class="flex-container"
+        id="temperature-summary-container">
+            <div>
+                <img src="./assets/images/summary-icons/clear-day-white.png" alt="">
+            </div>
+            <div>
+                <h1 id="degrees-label">20&#176;
+                    
+                </h1>
+                <p id="summary-labels">Clear Day</p>
+            </div>
+    </div>
+    <div class="flex-container" id="humidity-wind-container">
+    <div>
+        <img src="assets/images/icons/humidity.png" alt=""> <span>20%</span>
+    </div>
+    <div>
+        <img class="icon-sm-30" src="./assets/images/icons/wind-speed-flag.png"alt="">
+        <span>3 m /h</span>
+    </div>
+    </section>
+    </main>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
